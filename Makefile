@@ -8,6 +8,8 @@ LIBS = $(addprefix $(LIBDIR)/,libwn.a)
 
 CFLAGS = '-I./inc'
 
+.PHONY: all clean
+
 all: $(LIBS)
 
 $(LIBS) : $(LIBDIR) $(INCDIR)/wn.h
