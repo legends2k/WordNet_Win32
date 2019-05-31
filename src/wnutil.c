@@ -45,7 +45,7 @@ int wninit(void)
 
     if (!done) {
 	if ((env = getenv("WNDBVERSION"))) {
-	    wnrelease = _strdup(env);	/* set release */
+	    wnrelease = strdup(env);	/* set release */
 	    assert(wnrelease);
 	}
 	openerr = do_init();
@@ -67,7 +67,7 @@ int re_wninit(void)
     closefps();
 
     if ((env = getenv("WNDBVERSION"))) {
-	wnrelease = _strdup(env);	/* set release */
+	wnrelease = strdup(env);	/* set release */
 	assert(wnrelease);
     }
     openerr = do_init();
