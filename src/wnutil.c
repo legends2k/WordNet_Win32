@@ -85,10 +85,14 @@ static void closefps(void)
 
     if (OpenDB) {
 	for (i = 1; i < NUMPARTS + 1; i++) {
-	    if (datafps[i] != NULL)
-		fclose(datafps[i]); datafps[i] = NULL;
-	    if (indexfps[i] != NULL)
-		fclose(indexfps[i]); indexfps[i] = NULL;
+		if (datafps[i] != NULL) {
+			fclose(datafps[i]);
+			datafps[i] = NULL;
+		}
+		if (indexfps[i] != NULL) {
+			fclose(indexfps[i]);
+			indexfps[i] = NULL;
+		}
 	}
 	if (sensefp != NULL) {
 	    fclose(sensefp); sensefp = NULL;

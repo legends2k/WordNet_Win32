@@ -4,5 +4,5 @@ This is the [WordNet library][] to read the WordNet database files (the WordNet 
 
 The version of the database files used doesn't matter, the library will work for any version since the structure/format of the dict files are the same; only the content is updated.
 
-[WordNet library]: https://wordnet.princeton.edu/wordnet/download/current-version/
+[WordNet library]: https://wordnet.princeton.edu/download/current-version
 [Artha]: http://artha.sourceforge.net/
