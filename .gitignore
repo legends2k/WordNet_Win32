@@ -1,0 +1,7 @@
+# Emacs temporaries
+\#*#
+
+lib/
+obj/
+*.a
+*.o
